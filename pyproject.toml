@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hybridscope"
+version = "2.3.0"
+description = "Diagnostic workbench for mixed-attribute clustering: a standard error and a plain-language verdict for every learned feature weight."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = [
+    "clustering",
+    "feature-weighting",
+    "mixed-attribute",
+    "uncertainty-quantification",
+    "sandwich-estimator",
+    "drift-detection",
+    "diagnostics",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "numpy>=2.1",
+    "pandas>=2.2",
+    "scipy>=1.14",
+    "scikit-learn>=1.5",
+    "PyWavelets>=1.6",
+    "matplotlib>=3.9",
+]
+
+[project.optional-dependencies]
+web = ["streamlit>=1.50", "plotly>=6.0", "openpyxl>=3.1"]
+api = ["fastapi>=0.110", "uvicorn>=0.27", "pydantic>=2.6", "httpx>=0.27"]
+
+[project.scripts]
+hybridscope = "hybridscope.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/adhoccn/hybridscope"
+Repository = "https://github.com/adhoccn/hybridscope"
+Issues = "https://github.com/adhoccn/hybridscope/issues"
+
+[tool.setuptools]
+packages = ["hybridscope", "hybridscope.templates", "knn_hybrid"]
