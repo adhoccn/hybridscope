@@ -1,0 +1,25 @@
+﻿数据类型,数据集,方法,SNR_dB,SNR增益_dB
+表格式 DS1,synthetic-n300-d10-noisy6.0dB,含噪输入,5.832,0.0
+表格式 DS1,synthetic-n300-d10-noisy6.0dB,经典小波变换(通用阈值),0.405,-5.426
+表格式 DS1,synthetic-n300-d10-noisy6.0dB,本文(原始样本序),0.563,-5.269
+表格式 DS1,synthetic-n300-d10-noisy6.0dB,本文(PCA重排序改进),5.843,0.011
+表格式 DS2,synthetic-n300-d10-noisy6.0dB,含噪输入,5.944,0.0
+表格式 DS2,synthetic-n300-d10-noisy6.0dB,经典小波变换(通用阈值),0.456,-5.488
+表格式 DS2,synthetic-n300-d10-noisy6.0dB,本文(原始样本序),0.66,-5.284
+表格式 DS2,synthetic-n300-d10-noisy6.0dB,本文(PCA重排序改进),4.983,-0.961
+表格式 DS3,synthetic-n300-d10-noisy6.0dB,含噪输入,6.148,0.0
+表格式 DS3,synthetic-n300-d10-noisy6.0dB,经典小波变换(通用阈值),0.339,-5.809
+表格式 DS3,synthetic-n300-d10-noisy6.0dB,本文(原始样本序),0.605,-5.544
+表格式 DS3,synthetic-n300-d10-noisy6.0dB,本文(PCA重排序改进),6.413,0.265
+平滑采样 DS1,smooth-noisy1,含噪输入,5.89,0.0
+平滑采样 DS1,smooth-noisy1,经典小波变换(通用阈值),14.259,8.368
+平滑采样 DS1,smooth-noisy1,本文(原始样本序),14.649,8.759
+平滑采样 DS1,smooth-noisy1,本文(PCA重排序改进),2.994,-2.896
+平滑采样 DS2,smooth-noisy2,含噪输入,5.952,0.0
+平滑采样 DS2,smooth-noisy2,经典小波变换(通用阈值),14.605,8.653
+平滑采样 DS2,smooth-noisy2,本文(原始样本序),15.487,9.535
+平滑采样 DS2,smooth-noisy2,本文(PCA重排序改进),2.473,-3.479
+平滑采样 DS3,smooth-noisy3,含噪输入,6.048,0.0
+平滑采样 DS3,smooth-noisy3,经典小波变换(通用阈值),13.7,7.651
+平滑采样 DS3,smooth-noisy3,本文(原始样本序),13.903,7.855
+平滑采样 DS3,smooth-noisy3,本文(PCA重排序改进),3.165,-2.884

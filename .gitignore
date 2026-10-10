@@ -1,0 +1,31 @@
+# ============ 环境与工具 ============
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# ============ 编辑器与工作区 ============
+.vscode/
+.idea/
+.workbuddy/
+
+# ============ 案例运行产物（可由脚本重跑） ============
+cases/**/run_v*.log
+cases/**/report_*.html
+cases/**/snap_*.json
+
+# ============ 敏感数据 ============
+# 成绩明细（即使已脱敏）不入公开仓库；脚本入库、数据本地留存
+cases/**/data/
+
+# ============ 本地临时与打包产物 ============
+*.tmp
+*.bak
+~$*.docx
+dist/
+*.zip

@@ -1,0 +1,13 @@
+﻿dataset,attr_num,proposed,ref3,ref4,source
+DS1,1,0.902,0.762,0.758,pixel-backtracked
+DS1,2,0.912,0.868,0.780,pixel-backtracked
+DS1,3,0.883,0.841,0.820,pixel-backtracked
+DS1,4,0.902,0.654,0.666,pixel-backtracked
+DS2,1,0.902,0.762,0.758,reconstructed(DS2/DS3 像素饱和，按 DS1 比值重建)
+DS2,2,0.813,0.774,0.695,reconstructed(DS2/DS3 像素饱和，按 DS1 比值重建)
+DS2,3,0.811,0.772,0.753,reconstructed(DS2/DS3 像素饱和，按 DS1 比值重建)
+DS2,4,0.902,0.654,0.666,reconstructed(DS2/DS3 像素饱和，按 DS1 比值重建)
+DS3,1,0.902,0.762,0.758,reconstructed(DS2/DS3 像素饱和，按 DS1 比值重建)
+DS3,2,0.930,0.885,0.795,reconstructed(DS2/DS3 像素饱和，按 DS1 比值重建)
+DS3,3,0.892,0.849,0.829,reconstructed(DS2/DS3 像素饱和，按 DS1 比值重建)
+DS3,4,0.902,0.654,0.666,reconstructed(DS2/DS3 像素饱和，按 DS1 比值重建)

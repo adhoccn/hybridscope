@@ -1,0 +1,21 @@
+[Unit]
+Description=HybridScope workbench (Streamlit)
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/opt/hybridscope
+Environment="PATH=/opt/hybridscope/.venv/bin"
+Environment="TZ=Asia/Shanghai"
+# 只监听本机，外网经 nginx 转发；需要直接暴露时把 address 改成 0.0.0.0
+ExecStart=/opt/hybridscope/.venv/bin/streamlit run hybridscope/app.py \
+          --server.address=127.0.0.1 \
+          --server.port=8501 \
+          --server.headless=true \
+          --browser.gatherUsageStats=false
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,25 @@
+# Reproducibility environment (tested on Python 3.13, Windows 11 and Linux)
+# Install:  python -m venv .venv && .venv/Scripts/pip install -r requirements.txt
+
+numpy>=2.1
+pandas>=2.2
+scipy>=1.14
+scikit-learn>=1.5
+PyWavelets>=1.6
+matplotlib>=3.9
+
+# Optional: only needed for the OpenML real-data check in pilot_d1 (E9).
+# If network access is unavailable that experiment skips gracefully.
+# requests>=2.31
+
+# HybridScope product layer (hybridscope/): CLI and the Streamlit workbench.
+# The algorithm core above does not need these.
+streamlit>=1.50
+plotly>=6.0
+openpyxl>=3.1
+
+# HTTP service layer (hybridscope/serve.py, v2.3+): only needed to run the API.
+fastapi>=0.110
+uvicorn>=0.27
+pydantic>=2.6
+httpx>=0.27

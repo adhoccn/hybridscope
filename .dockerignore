@@ -1,0 +1,40 @@
+# Docker 构建上下文忽略项：论文草稿、实验产物、案例数据一律不进镜像。
+.git
+.github
+.workbuddy
+__pycache__
+*.pyc
+*.pyo
+
+# 构建与排版产物
+paper_build/
+out/
+dist/
+*.pdf
+*.docx
+*.aux
+*.log
+*.tex
+
+# 学情案例：脚本入库，成绩明细（即使脱敏）不进镜像
+cases/**/data/
+
+# 论文图表产物，产品层用不到
+knn_hybrid/figures/
+knn_hybrid/results/
+knn_hybrid/plot_results.py
+knn_hybrid/run_experiments.py
+pilot_d1/
+pilot_d3/figs/
+pilot_d3/results/
+
+# 论文草稿与内部材料
+paper_weight_estimability_draft.md
+paper_A_draft.md
+paper_B_draft.md
+paper_A_zh.md
+paper_B_zh.md
+novelty_check/
+*.md
+
+!README.md

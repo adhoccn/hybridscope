@@ -1,0 +1,13 @@
+﻿dataset,n_samples,proposed,ref3,ref4,source
+DS1,100,2.37,3.58,4.19,paper-table1
+DS1,200,4.05,5.56,6.88,paper-table1
+DS1,300,6.54,8.69,9.01,paper-table1
+DS1,400,8.77,9.87,11.01,paper-table1
+DS2,100,4.55,7.25,9.63,paper-table1
+DS2,200,8.36,14.52,17.84,paper-table1
+DS2,300,12.74,18.63,21.77,paper-table1
+DS2,400,16.40,21.63,25.63,paper-table1
+DS3,100,7.05,9.36,12.30,paper-table1
+DS3,200,13.74,15.77,18.63,paper-table1
+DS3,300,19.10,21.36,23.74,paper-table1
+DS3,400,24.25,26.74,28.69,paper-table1

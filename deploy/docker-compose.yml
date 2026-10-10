@@ -1,0 +1,15 @@
+services:
+  hybridscope:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    image: hybridscope:0.1.0
+    container_name: hybridscope
+    restart: unless-stopped
+    environment:
+      TZ: Asia/Shanghai
+    # 方案 C（当前，无域名）：直接对外，安全组放行 TCP:8501
+    ports:
+      - "8501:8501"
+    # 方案 A（以后有域名）：改成下面这行，只监听本机，外网交给 nginx
+    #   ports: ["127.0.0.1:8501:8501"]

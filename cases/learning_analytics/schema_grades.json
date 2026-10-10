@@ -1,0 +1,95 @@
+{
+  "name": "grades-canonical",
+  "version": "1",
+  "note": "学情分型统一口径：过程性考核与项目类考核各一个百分制得分，两学期对总评的权重结构一致（60/40），可跨学期比较；分组列（专业/行政班）语义不同，不参与跨学期权重比较。",
+  "fields": [
+    {
+      "name": "student_id",
+      "label": "学号",
+      "kind": "categorical",
+      "agg": "first",
+      "role": "id",
+      "required": false,
+      "comparable": false,
+      "note": "脱敏后的学号哈希，只用于核对，不进模型"
+    },
+    {
+      "name": "process",
+      "label": "过程考核得分",
+      "kind": "numeric",
+      "agg": "mean",
+      "role": "feature",
+      "note": "平时过程性考核的百分制得分：春=测验 1–4 均值，秋=平时作业"
+    },
+    {
+      "name": "project",
+      "label": "项目考核得分",
+      "kind": "numeric",
+      "agg": "mean",
+      "role": "feature",
+      "note": "综合/项目类考核的百分制得分：春=报告 1–4 均值，秋=大作业"
+    },
+    {
+      "name": "total",
+      "label": "总评",
+      "kind": "numeric",
+      "agg": "first",
+      "role": "target",
+      "required": false,
+      "comparable": false,
+      "note": "加权总评，只用于切分学情档位；作特征会泄漏标签"
+    },
+    {
+      "name": "cohort",
+      "label": "群体分组",
+      "kind": "categorical",
+      "agg": "first",
+      "role": "feature",
+      "required": false,
+      "comparable": false,
+      "note": "春=专业名，秋=行政班，语义不同，跨学期不作权重比较"
+    }
+  ],
+  "profiles": {
+    "2026spring": {
+      "student_id": [
+        "学号"
+      ],
+      "process": [
+        "测验1",
+        "测验2",
+        "测验3",
+        "测验4"
+      ],
+      "project": [
+        "报告1",
+        "报告2",
+        "报告3",
+        "报告4"
+      ],
+      "total": [
+        "总评"
+      ],
+      "cohort": [
+        "专业"
+      ]
+    },
+    "2025autumn": {
+      "student_id": [
+        "学号"
+      ],
+      "process": [
+        "平时作业"
+      ],
+      "project": [
+        "大作业"
+      ],
+      "total": [
+        "总评"
+      ],
+      "cohort": [
+        "专业"
+      ]
+    }
+  }
+}
